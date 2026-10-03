@@ -120,25 +120,26 @@ export default function ExperienceSection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-16 bg-slate-950 text-white rounded-3xl p-8 sm:p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 shadow-xl"
+          className="mt-16 bg-slate-950 text-white rounded-3xl p-6 sm:p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 shadow-xl"
         >
-          <div className="flex items-center gap-5">
-            <div className="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center text-white shrink-0">
-              <GraduationCap className="w-8 h-8" />
+          <div className="flex items-start sm:items-center gap-4 sm:gap-5">
+            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-white/10 flex items-center justify-center text-white shrink-0 mt-1 sm:mt-0">
+              <GraduationCap className="w-6 h-6 sm:w-8 sm:h-8" />
             </div>
             <div>
               <span className="text-xs font-semibold uppercase tracking-widest text-slate-400 block mb-1">
                 Education
               </span>
-              <h3 className="text-xl sm:text-2xl font-bold">
-                Bachelor of Science in Computer Science (BS CS)
+              <h3 className="text-lg sm:text-2xl font-bold leading-snug">
+                <span className="block sm:inline">Bachelor of Science in</span>{' '}
+                <span className="block sm:inline">Computer Science (BS CS)</span>
               </h3>
-              <p className="text-slate-300 text-sm font-medium mt-1">
+              <p className="text-slate-300 text-xs sm:text-sm font-medium mt-1 leading-relaxed">
                 University of Engineering & Technology (UET), KSK Lahore (2023 – 2027)
               </p>
             </div>
           </div>
-          <div className="px-4 py-2 rounded-full bg-white/10 text-xs font-semibold text-slate-200 whitespace-nowrap">
+          <div className="px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full bg-white/10 text-xs font-semibold text-slate-200 whitespace-nowrap self-start md:self-auto">
             Undergraduate Student
           </div>
         </motion.div>

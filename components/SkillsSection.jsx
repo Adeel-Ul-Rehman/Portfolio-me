@@ -36,7 +36,7 @@ export default function SkillsSection() {
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-200/70 text-slate-800 text-xs font-semibold uppercase tracking-wider mb-3">
             <Sparkles className="w-3.5 h-3.5 text-slate-900" /> Technical Expertise
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-950 tracking-tight">
+          <h2 className="text-xl min-[360px]:text-[1.38rem] sm:text-4xl lg:text-5xl font-extrabold text-slate-950 tracking-tight whitespace-nowrap">
             Skills, Tools & Technologies
           </h2>
           <p className="text-slate-600 font-medium text-sm sm:text-base mt-3 leading-relaxed">
