@@ -55,11 +55,14 @@ export default function HeroSection() {
         {/* MOBILE VIEW (Strictly Ordered for Mobile, hidden on lg screens) */}
         <div className="flex flex-col lg:hidden space-y-4">
           
-          {/* 1. Pill Tag */}
+          {/* 1. Role Badge (Clean Multi-line on Mobile) */}
           <div className="flex justify-start">
-            <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-800 text-[11px] min-[390px]:text-xs font-semibold uppercase tracking-tight shadow-xs whitespace-nowrap">
-              <Sparkles className="w-3.5 h-3.5 text-slate-900 shrink-0" />
-              <span>Full-Stack Software Engineer & AI Systems Architect</span>
+            <div className="inline-flex items-center gap-2 px-3.5 py-2 rounded-2xl bg-slate-100 border border-slate-200 text-slate-800 text-xs font-semibold uppercase tracking-tight shadow-xs">
+              <Sparkles className="w-4 h-4 text-slate-900 shrink-0 self-start mt-0.5" />
+              <div className="flex flex-col leading-snug">
+                <span>Full-Stack Software Engineer</span>
+                <span className="text-slate-600 font-medium">& AI Systems Architect</span>
+              </div>
             </div>
           </div>
 
