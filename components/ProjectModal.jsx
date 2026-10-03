@@ -154,7 +154,7 @@ export default function ProjectModal({ project, onClose }) {
                   href={project.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl bg-slate-950 text-white font-medium text-xs sm:text-sm hover:bg-slate-800 transition-colors shadow flex-1 sm:flex-none"
+                  className="inline-flex items-center justify-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl bg-slate-950 text-white font-medium text-xs sm:text-sm hover:bg-slate-800 transition-colors shadow flex-1 sm:flex-none whitespace-nowrap"
                 >
                   <span>{project.id === 'hadi-bookstore' ? 'Visit Storefront' : project.adminUrl ? 'Visit Customer Portal' : 'Visit Live Website'}</span>
                   <ExternalLink className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
@@ -165,7 +165,7 @@ export default function ProjectModal({ project, onClose }) {
                   href={project.adminUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl bg-blue-600 text-white font-medium text-xs sm:text-sm hover:bg-blue-700 transition-colors shadow flex-1 sm:flex-none"
+                  className="inline-flex items-center justify-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl bg-blue-600 text-white font-medium text-xs sm:text-sm hover:bg-blue-700 transition-colors shadow flex-1 sm:flex-none whitespace-nowrap"
                 >
                   <ShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                   <span>Visit Admin Panel</span>
@@ -177,7 +177,7 @@ export default function ProjectModal({ project, onClose }) {
                   href={project.githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl border border-slate-300 text-slate-800 font-medium text-xs sm:text-sm hover:bg-slate-50 transition-colors flex-1 sm:flex-none"
+                  className="inline-flex items-center justify-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl border border-slate-300 text-slate-800 font-medium text-xs sm:text-sm hover:bg-slate-50 transition-colors flex-1 sm:flex-none whitespace-nowrap"
                 >
                   <Github className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                   <span>GitHub Repository</span>

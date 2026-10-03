@@ -107,7 +107,7 @@ export default function ContactSection() {
                 href="https://github.com/Adeel-Ul-Rehman"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 px-4 sm:px-5 py-2.5 sm:py-3 rounded-xl bg-slate-950 text-white text-xs sm:text-sm font-semibold hover:bg-slate-800 transition-colors shadow flex-1 sm:flex-none"
+                className="flex items-center justify-center gap-2 px-4 sm:px-5 py-2.5 sm:py-3 rounded-xl bg-slate-950 text-white text-xs sm:text-sm font-semibold hover:bg-slate-800 transition-colors shadow flex-1 sm:flex-none whitespace-nowrap"
               >
                 <Github className="w-4 h-4" />
                 <span>GitHub Profile</span>
@@ -117,7 +117,7 @@ export default function ContactSection() {
                 href="https://linkedin.com/in/adeel-ul-rehman-73a088294"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 px-4 sm:px-5 py-2.5 sm:py-3 rounded-xl border border-slate-300 text-slate-800 text-xs sm:text-sm font-semibold hover:bg-slate-50 transition-colors flex-1 sm:flex-none"
+                className="flex items-center justify-center gap-2 px-4 sm:px-5 py-2.5 sm:py-3 rounded-xl border border-slate-300 text-slate-800 text-xs sm:text-sm font-semibold hover:bg-slate-50 transition-colors flex-1 sm:flex-none whitespace-nowrap"
               >
                 <Linkedin className="w-4 h-4 text-blue-600" />
                 <span>LinkedIn</span>
@@ -195,7 +195,7 @@ export default function ContactSection() {
 
                 <button
                   type="submit"
-                  className="w-full py-4 rounded-xl bg-slate-950 text-white font-semibold text-sm hover:bg-slate-800 transition-colors shadow-md flex items-center justify-center gap-2 group"
+                  className="w-full py-3.5 sm:py-4 rounded-xl bg-slate-950 text-white font-semibold text-sm hover:bg-slate-800 transition-colors shadow-md flex items-center justify-center gap-2 group whitespace-nowrap"
                 >
                   <Send className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                   <span>Send Message</span>

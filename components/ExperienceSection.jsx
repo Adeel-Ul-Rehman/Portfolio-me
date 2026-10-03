@@ -90,12 +90,12 @@ export default function ExperienceSection() {
                     </span>
                   </div>
 
-                  <div className="flex flex-wrap items-center gap-3 text-xs font-medium text-slate-500">
-                    <span className="inline-flex items-center gap-1 bg-white px-3 py-1 rounded-full border border-slate-200 text-slate-700">
+                  <div className="flex flex-wrap items-center gap-2 sm:gap-3 text-xs font-medium text-slate-500">
+                    <span className="inline-flex items-center gap-1 bg-white px-2.5 sm:px-3 py-1 rounded-full border border-slate-200 text-slate-700 whitespace-nowrap">
                       <Calendar className="w-3.5 h-3.5 text-slate-900" />
                       {exp.period}
                     </span>
-                    <span className="inline-flex items-center gap-1 bg-white px-3 py-1 rounded-full border border-slate-200 text-slate-700">
+                    <span className="inline-flex items-center gap-1 bg-white px-2.5 sm:px-3 py-1 rounded-full border border-slate-200 text-slate-700 whitespace-nowrap">
                       <MapPin className="w-3.5 h-3.5 text-slate-900" />
                       {exp.location}
                     </span>

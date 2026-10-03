@@ -310,7 +310,7 @@ export default function ProjectsSection() {
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-200/80 text-slate-800 text-xs font-semibold uppercase tracking-wider mb-4 border border-slate-300/50">
               <Sparkles className="w-3.5 h-3.5 text-slate-900" /> Featured Engineering Work
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-950 tracking-tight">
+            <h2 className="text-xl min-[360px]:text-[1.38rem] sm:text-4xl lg:text-5xl font-extrabold text-slate-950 tracking-tight whitespace-nowrap">
               Featured Projects & Systems
             </h2>
           </div>
@@ -319,18 +319,18 @@ export default function ProjectsSection() {
           </p>
         </div>
 
-        {/* Category Filter Tabs */}
-        <div className="flex flex-wrap items-center gap-2 sm:gap-2.5 mb-10 sm:mb-12 pb-2 border-b border-slate-200">
+        {/* Category Filter Tabs (Single line with right-scroll on mobile) */}
+        <div className="flex items-center gap-2 sm:gap-2.5 mb-8 sm:mb-12 pb-3 overflow-x-auto no-scrollbar scroll-smooth -mx-4 px-4 sm:mx-0 sm:px-0 border-b border-slate-200">
           {tabs.map((tab) => {
             const isActive = activeTab === tab.slug;
             return (
               <button
                 key={tab.slug}
                 onClick={() => setActiveTab(tab.slug)}
-                className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 ${
+                className={`px-3.5 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap shrink-0 transition-all duration-200 ${
                   isActive
                     ? 'bg-slate-950 text-white shadow-md shadow-slate-950/10'
-                    : 'text-slate-600 hover:text-slate-950 hover:bg-slate-200/60'
+                    : 'text-slate-600 hover:text-slate-950 hover:bg-slate-200/60 bg-white sm:bg-transparent border border-slate-200 sm:border-0'
                 }`}
               >
                 {tab.name}
@@ -366,18 +366,18 @@ export default function ProjectsSection() {
 
                     {/* Floating Badges */}
                     <div className="absolute top-3.5 left-3.5 right-3.5 flex items-center justify-between pointer-events-none z-10">
-                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold backdrop-blur-md bg-white/90 text-slate-800 shadow-xs border border-white/60">
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold backdrop-blur-md bg-white/90 text-slate-800 shadow-xs border border-white/60 whitespace-nowrap">
                         <IconComp className="w-3.5 h-3.5 text-slate-900" />
                         {project.badge}
                       </span>
 
                       {project.liveUrl ? (
-                        <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-bold tracking-wide uppercase backdrop-blur-md bg-emerald-500/90 text-white shadow-xs">
+                        <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-bold tracking-wide uppercase backdrop-blur-md bg-emerald-500/90 text-white shadow-xs whitespace-nowrap">
                           <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
                           Live
                         </span>
                       ) : (
-                        <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-medium backdrop-blur-md bg-slate-900/80 text-white shadow-xs">
+                        <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-medium backdrop-blur-md bg-slate-900/80 text-white shadow-xs whitespace-nowrap">
                           {project.categorySlug === 'ai' ? 'Research & ML' : 'Engine'}
                         </span>
                       )}
@@ -425,13 +425,13 @@ export default function ProjectsSection() {
                         {project.tech.slice(0, 4).map((t, idx) => (
                           <span
                             key={idx}
-                            className="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium border border-slate-200/50"
+                            className="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium border border-slate-200/50 whitespace-nowrap"
                           >
                             {t}
                           </span>
                         ))}
                         {project.tech.length > 4 && (
-                          <span className="px-2 py-1 rounded-lg bg-slate-50 text-slate-500 text-xs font-medium border border-slate-200/50">
+                          <span className="px-2 py-1 rounded-lg bg-slate-50 text-slate-500 text-xs font-medium border border-slate-200/50 whitespace-nowrap">
                             +{project.tech.length - 4}
                           </span>
                         )}
@@ -439,7 +439,7 @@ export default function ProjectsSection() {
 
                       {/* Card Bottom Bar */}
                       <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-slate-950">
-                        <div className="flex items-center gap-1.5 text-slate-900 group-hover:text-blue-600 transition-colors">
+                        <div className="flex items-center gap-1.5 text-slate-900 group-hover:text-blue-600 transition-colors whitespace-nowrap">
                           <span>Explore Case Study</span>
                           <ArrowUpRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                         </div>
@@ -451,7 +451,7 @@ export default function ProjectsSection() {
                               target="_blank"
                               rel="noopener noreferrer"
                               onClick={(e) => e.stopPropagation()}
-                              className="inline-flex items-center gap-1 text-[11px] font-semibold text-slate-600 hover:text-slate-950 transition-colors px-2 py-1 rounded-md hover:bg-slate-100 border border-slate-200/60"
+                              className="inline-flex items-center gap-1 text-[11px] font-semibold text-slate-600 hover:text-slate-950 transition-colors px-2 py-1 rounded-md hover:bg-slate-100 border border-slate-200/60 whitespace-nowrap"
                               title={project.id === 'hadi-bookstore' ? "Visit Live Storefront" : "Visit Live Application"}
                             >
                               <span>{project.id === 'hadi-bookstore' ? 'Store' : 'Live'}</span>
@@ -464,7 +464,7 @@ export default function ProjectsSection() {
                               target="_blank"
                               rel="noopener noreferrer"
                               onClick={(e) => e.stopPropagation()}
-                              className="inline-flex items-center gap-1 text-[11px] font-semibold text-blue-700 hover:text-blue-900 transition-colors px-2 py-1 rounded-md bg-blue-50 hover:bg-blue-100/80 border border-blue-200"
+                              className="inline-flex items-center gap-1 text-[11px] font-semibold text-blue-700 hover:text-blue-900 transition-colors px-2 py-1 rounded-md bg-blue-50 hover:bg-blue-100/80 border border-blue-200 whitespace-nowrap"
                               title="Visit Admin Panel"
                             >
                               <span>Admin</span>
